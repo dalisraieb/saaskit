@@ -46,8 +46,8 @@ export const Typo: Story = {
             <div className='flex justify-end space-x-4 mt-8'>
                 {/* <Button size="small" variant="ghost" color="secondary">View Details</Button>
                 <Button size="small" variant="fill" color="primary">Edit Profile</Button> */}
-                <Button size="small" variant="fill" color="error"> <X /></Button>
-                <Button size="small" variant="fill" color="success">Agree <Check /></Button>
+                <Button size="small" variant="surface" color="error"> <X /></Button>
+                <Button size="small" variant="outline" color="success">Agree <Check /></Button>
             </div>
         </div >
     ),

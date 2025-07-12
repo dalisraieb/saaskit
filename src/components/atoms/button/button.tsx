@@ -3,7 +3,7 @@ import "../../../output.css";
 import { ButtonHTMLAttributes, ReactNode } from 'react';
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
-  variant?: 'fill' | 'outline' | 'ghost' | 'link';
+  variant?: 'fill' | 'outline' | 'ghost' | 'link' | 'surface';
   color?: 'primary' | "secondary" | "error" | 'success' | 'warning' | 'info';
   gradient?: boolean;
   size?: 'xs' | 'small' | 'medium' | 'large';
@@ -48,6 +48,7 @@ export const Button = ({
     "fill-warning": "bg-warning text-brand-foreground hover:bg-warning/90 shadow-md hover:shadow-lg",
     /* Fill - error */
     "fill-error": "bg-error text-brand-foreground hover:bg-error/90 shadow-md hover:shadow-lg",
+
     /* Outline - primary  */
     "outline-primary": "border border-brand/30 bg-brand/10 dark:bg-brand/30 text-brand shadow-sm hover:bg-brand/30 dark:hover:bg-brand/20",
     /* Outline - secondary  */
@@ -60,6 +61,20 @@ export const Button = ({
     "outline-warning": "border border-warning/30 bg-warning/10 dark:bg-warning/30 text-warning shadow-sm hover:bg-warning/30 dark:hover:bg-warning/20",
     /* Outline - info  */
     "outline-info": "border border-info/30 bg-info/10 dark:bg-info/30 text-info shadow-sm hover:bg-info/30 dark:hover:bg-info/20",
+
+    /* surface - primary  */
+    "surface-primary": "border border-brand/30 text-brand shadow-sm hover:bg-brand/30 dark:hover:bg-brand/20",
+    /* surface - secondary  */
+    "surface-secondary": "border border-border text-foreground shadow-sm hover:bg-background-subtle/40 dark:hover:bg-background-subtle/50",
+    /* surface - Error  */
+    "surface-error": "border border-error/30 text-error shadow-sm hover:bg-error/10 dark:hover:bg-error/30",
+    /* surface - success  */
+    "surface-success": "border border-success/30 text-success shadow-sm hover:bg-success/10 dark:hover:bg-success/20",
+    /* surface - warning  */
+    "surface-warning": "border border-warning/30 text-warning shadow-sm hover:bg-warning/10 dark:hover:bg-warning/20",
+    /* surface - info  */
+    "surface-info": "border border-info/30  text-info shadow-sm hover:bg-info/10 dark:hover:bg-info/20",
+
     /* ghost primary  */
     "ghost-primary": "text-brand hover:bg-brand hover:text-brand-foreground",
     /* ghost secondary  */
@@ -72,6 +87,7 @@ export const Button = ({
     "ghost-warning": "text-warning hover:bg-warning hover:text-brand-foreground",
     /* ghost info  */
     "ghost-info": "text-info hover:bg-info hover:text-brand-foreground",
+
     /* link primary  */
     "link-primary": "text-brand hover:underline",
     /* link secondary  */
