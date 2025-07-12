@@ -26,7 +26,7 @@ export const Button = ({
   ...props
 }: ButtonProps) => {
   const base =
-    'rounded-button cursor-pointer transition-all duration-200 active:scale-95 backdrop-blur-md flex items-center justify-center capitalize font-medium disabled:opacity-50 disabled:pointer-events-none';
+    'rounded-button cursor-pointer transition-all duration-200 active:scale-95 backdrop-blur-md flex items-center justify-center font-medium disabled:opacity-50 disabled:pointer-events-none';
 
   const sizeMap = {
     xs: !iconOnly ? 'text-xs h-7 px-space-md xs:px-space-lg [&>svg]:size-3.5 gap-2' : 'size-7 [&>svg]:size-3.5',

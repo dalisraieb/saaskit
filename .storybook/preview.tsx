@@ -18,12 +18,12 @@ const preview: Preview = {
       if (shecma === "both") {
         return (
           <div className={`flex justify-center items-center flex-wrap gap-8`}>
-            <div className={`p-4 space-y-3 border border-gray-200 rounded-lg min-w-72 flex flex-col items-center `}>
-              <h1 className='text-[11px] uppercase'>Light Mode</h1>
+            <div className={`p-4 space-y-4 border border-gray-200 rounded-lg min-w-72 flex flex-col items-center `}>
+              <h1 className='text-[11px] uppercase font-semibold'>Light Mode</h1>
               <Story />
             </div>
-            <div className={`p-4 dark space-y-3 bg-neutral-950 rounded-lg min-w-72 flex flex-col items-center`}>
-              <h1 className='text-[11px] uppercase text-gray-300'>Dark Mode</h1>
+            <div className={`p-4 dark space-y-4 bg-neutral-950 rounded-lg min-w-72 flex flex-col items-center`}>
+              <h1 className='text-[11px] uppercase text-gray-300 font-semibold'>Dark Mode</h1>
               <Story />
             </div>
           </div>
