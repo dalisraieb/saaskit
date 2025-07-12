@@ -65,6 +65,16 @@ export const Outline: Story = {
   }
 };
 
+export const Surface: Story = {
+  args: {
+    // variant: "secondary",
+    children: (<>Next <ChevronRight /></>),
+    variant: "surface",
+    color: 'primary',
+    size: "small",
+  }
+};
+
 export const Ghost: Story = {
   args: {
     // variant: "secondary",
