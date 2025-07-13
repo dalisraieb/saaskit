@@ -4,7 +4,7 @@ import { Button, type ButtonProps } from './button';
 import { Check, ChevronRight, LoaderCircle, LogIn, Save, X } from 'lucide-react';
 
 const meta = {
-  title: 'Example/Button',
+  title: 'Atoms/Button',
   component: Button,
   parameters: {
     layout: 'centered',
